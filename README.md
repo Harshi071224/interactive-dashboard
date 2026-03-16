@@ -14,5 +14,4 @@ This project is a web application built using **HTML, CSS, and JavaScript**.
 - JavaScript
 - APIs
 
-## How to Run
-Open `index.html` using Live Server in VS Code.
+
