@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Interactive Data Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+<div class="logo">
+🖥Interactive Dashboard
+</div>
+
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#dashboard">Dashboard</a></li>
+</ul>
+<button id="themeToggle">🌙</button>
+</nav>
+
+<section class="hero" id="home">
+<h1>Interactive Data Dashboard</h1>
+<p>Generate users, check weather, manage tasks and search products dynamically.</p>
+<button onclick="location.href='#dashboard'">Explore Dashboard</button>
+</section>
+
+<section id="about" class="container">
+
+<h2>About</h2>
+
+<p>
+This project demonstrates DOM manipulation and API integration using HTML, CSS and JavaScript.
+The dashboard includes features like random user generator, weather search, to-do list and
+live product filtering.
+</p>
+
+</section>
+
+<section id="dashboard" class="container">
+
+<h2>Dashboard Features</h2>
+
+<div class="dashboard-grid">
+
+<div class="card">
+<h3>👤 Random User Generator</h3>
+<button id="generateUser">Generate User</button>
+
+<div id="spinner" style="display:none;">
+  <div class="loader"></div>
+</div>
+
+<div id="userContainer"></div>
+</div>
+
+<div class="card">
+<h3>🌤 Weather Search</h3>
+<input type="text" id="cityInput" placeholder="Enter city">
+<button id="searchWeather">Search</button>
+<div id="weatherResult"></div>
+</div>
+
+<div class="card">
+<h3>✅ To-Do List</h3>
+<input type="text" id="taskInput" placeholder="Enter task">
+<button id="addTask">Add Task</button>
+
+<ul id="taskList"></ul>
+<button onclick="clearTasks()">Clear Tasks</button>
+
+</div>
+
+</div>
+
+<h3>Live Product Search Filter</h3>
+
+<input type="text" id="searchBox" placeholder="Search products...">
+
+<div class="products">
+
+<div class="product">
+<img src="images/phone.jpg">
+<p>Phone</p>
+</div>
+
+<div class="product">
+<img src="images/headphones.jpg">
+<p>Headphones</p>
+</div>
+
+<div class="product">
+<img src="images/laptop.jpg">
+<p>Laptop</p>
+</div>
+
+<div class="product">
+<img src="images/keyboard.jpg">
+<p>Keyboard</p>
+</div>
+
+<div class="product">
+<img src="images/mouse.jpg">
+<p>Mouse</p>
+</div>
+
+<div class="product">
+<img src="images/camera.jpg">
+<p>Camera</p>
+</div>
+
+<div class="product">
+<img src="images/smartwatch.jpg">
+<p>Smartwatch</p>
+</div>
+
+<div class="product">
+<img src="images/tablet.jpg">
+<p>Tablet</p>
+</div>
+
+<div class="product">
+<img src="images/speaker.jpg">
+<p>Speaker</p>
+</div>
+
+<div class="product">
+<img src="images/monitor.jpg">
+<p>Monitor</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Interactive Dashboard</p>
+<p>Built using HTML, CSS, JavaScript & API</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
