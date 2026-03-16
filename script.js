@@ -1,4 +1,3 @@
-
 const button = document.getElementById("generateUser");
 const spinner = document.getElementById("spinner");
 const userContainer = document.getElementById("userContainer");
